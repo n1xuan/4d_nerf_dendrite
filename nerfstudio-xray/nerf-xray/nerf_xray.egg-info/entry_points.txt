@@ -1,0 +1,9 @@
+[nerfstudio.dataparser_configs]
+multi-camera-dataparser = nerf_xray.parser_config:MultiCameraDataParser
+xray-dataparser = nerf_xray.parser_config:XrayDataparser
+
+[nerfstudio.method_configs]
+nerf_def_xray = nerf_xray.xray_def_config:nerf_def_xray
+nerf_xray = nerf_xray.canonical_config:nerf_xray
+spatiotemporal_mix = nerf_xray.spatiotemporal_mix_config:spatiotemporal_mix
+xray_vfield = nerf_xray.vfield_config:xray_vfield
